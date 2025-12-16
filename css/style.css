@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* navbar dan perkenalan */
+.hero {    
+    background-image: url(../asset/picture-2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.name {
+    color: white;
+    font-size: 24px;
+}
+
+/* body atau description */
+.body-satu {
+    background-image: url(../asset/picture-1.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: end;    
+}
+
+.about-me {    
+    margin: 40px;
+    color: white;
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(70, 70, 70, 0.4);        
+    border-radius: 16px;
+    padding: 40px 30px;
+}
+
+.about-me:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.about-me h2 {
+    font-size: 28px;    
+}
+
+.about-me p {    
+    font-size: 18px;
+}
+
+
+/* About my project */
+.my-project {
+    background-image: url(../asset/picture-3.jpg);
+    background-size: cover;    
+    background-position: center;
+    height: 100vh;
+}
