@@ -8,6 +8,8 @@
 
     <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link href='https://cdn.boxicons.com/3.0.6/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="container">
@@ -15,8 +17,8 @@
 
         <header>
             <div class="left">
-                <img src="assets/images/miladicode.png" alt="logo">
-                <h1><span style="color: #72a1de">M.</span> Maulana Saldi</h1>
+                <img src="assets/images/saldi-logo.png" alt="logo">
+                <h1>Saldi</h1>
             </div>
 
             <ul>
@@ -26,7 +28,7 @@
             </ul>
 
             <div class="box-icons">
-                <a href="#"><i class='bxl  bx-youtube'></i></a>
+                <a href="#"><i class='bxl  bx-youtube'></i> </a>
                 <a href="#"><i class='bxl  bx-github'></i> </a>
                 <a href="#"><i class='bxl  bx-linkedin-square'></i> </a>
             </div>
@@ -37,21 +39,21 @@
         </div>
 
         <section class="hero">
-            <div class="hero-info">
-                <div class="hero-info-title">
+            <div class="hero-info autoBlur">
+                <div class="hero-info-title" data-aos="fade-down" data-aos-duration="1500">
                     <i class='bxl  bx-sketch'></i>
                     front-end & back-end Developer Portofolio
                 </div>
 
-                <h1>Providing <span class="gradient">the best</span> Project <span class="gradient">Experience</span></h1>
+                <h1 data-aos="fade-right" data-aos-duration="2500">Providing <span class="gradient">the best</span> Project <span class="gradient">Experience</span></h1>
 
-                <p>I'm a Front-end and Back-end developer with Experience in website, Desktop, and Software development. Check out my and skills.</p>
+                <p data-aos="fade-right" data-aos-duration="2500">I'm a Front-end and Back-end developer with Experience in website, Desktop, and Software development. Check out my and skills.</p>
                 
-                <button><i class='bx  bx-send-alt'></i> Contact Me</button>
+                <button data-aos="fade-right" data-aos-duration="3000"><i class='bx  bx-send-alt'></i> Contact Me</button>
             </div>
 
             <div class="hero-vid-box">
-                <video autoplay loop muted plays-inline src="assets/videos/hero-video.mp4" type="video/mp4"></video>
+                <video data-aos="zoom-in" data-aos-duration="1500" class="autoBlur" autoplay loop muted plays-inline src="assets/videos/hero-video.mp4" type="video/mp4"></video>
             </div>
 
             <div class="scroll-down"></div>
@@ -60,21 +62,21 @@
         <section class="info-section">
             <h1 class="section-title">Hello, There👋</h1>
             <div class="info-cards">
-                <div class="card">
+                <div class="card" data-aos="fade-down" data-aos-duration="1500">
                     <h1>Hi ther, I'm Saldi</h1>
                     <p>With last then 1 years of experience, I have honed mya skills in both frontend and backend dev, creating dynamic</p>
 
                     <img src="assets/images/grid1.png" alt="card-image">
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="fade-down" data-aos-duration="1500">
                     <h1>Tech Stack</h1>
                     <p>I specialize in a variety of languages, framworks, and tools that allow me to build robust and scalable applications.</p>
 
                     <img src="assets/images/grid2.png" alt="card-image">
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="fade-left" data-aos-duration="1500">
                     <h1>I'm very felxible with time zone communications & locations</h1>
                     <p>I'm based in Indonesia, Jakarta and open to work worldwide.</p>
 
@@ -83,7 +85,7 @@
                     <button><i class='bx  bx-arrow-out-up-right-stroke-square bx-rotate-90'></i> Contact Me</button>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="fade-up" data-aos-duration="1500">
                     <h1>My Passion for Coding</h1>
                     <p>I love solving problems and building things through cod. Programming isn't just mya profession-it's my passion. I enjoy exploring new technologies, and enhancing my skills.</p>
 
@@ -95,23 +97,23 @@
         <section class="my-projects">
             <h1 class="section-title">My Projects 👨‍💻</h1>        
             <div class="project-card">
-                <div class="project-vidbox">
+                <div class="project-vidbox autoBlur" data-aos="fade-right" data-aos-duration="1500">
                     <video id="projectVideo1" muted src="assets/videos/project1.mp4"></video>
                     <div class="hover-sign"></div>
                 </div>
 
-                <div class="project-info">
+                <div class="project-info" data-aos="zoom-in" data-aos-duration="2500">
                     <h1>Animated <span class="gradient">Gaming</span> Website</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis harum sunt reprehenderit numquam eveniet maiores repudiandae? Fugiat velit fuga, natus, aperiam maiores illo officiis cum consequuntur quis et magni molestiae!</p>
                     <button><i class='bx  bx-arrow-out-up-right-stroke-square bx-rotate-90'></i> Website</button>
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-vidbox">
-                    <video id="projectVideo2" src="assets/videos/project2.mp4"></video>
+                <div class="project-vidbox autoBlur" data-aos="fade-right" data-aos-duration="1500">
+                    <video id="projectVideo2" muted src="assets/videos/project2.mp4"></video>
                 </div>
 
-                <div class="project-info">
+                <div class="project-info" data-aos="zoom-in" data-aos-duration="2500">
                     <h1>Modern <span class="gradient">Portofolio</span> Website</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores blanditiis tempore reiciendis quidem praesentium voluptas! At, a? Explicabo at iure quae doloremque ipsum esse non officia et aspernatur!</p>
                     <button><i class='bx  bx-arrow-out-up-right-stroke-square bx-rotate-90'></i> Website</button>
@@ -119,16 +121,16 @@
             </div>
 
             <div class="project-card">
-                <div class="project-vidbox">
-                    <video id="projectVideo3" src="assets/videos/project3.mp4"></video>
+                <div class="project-vidbox autoBlur" data-aos="fade-right" data-aos-duration="1500">
+                    <video id="projectVideo3" muted src="assets/videos/project3.mp4"></video>
                 </div>
 
-                <div class="project-info">
+                <div class="project-info" data-aos="zoom-in" data-aos-duration="2500">
                     <h1>Movie <span class="gradient">Landing</span> Page</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorum ab facere omnis voluptas quisquam consequatur explicabo quas.</p>
                     <button><i class='bx  bx-arrow-out-up-right-stroke-square bx-rotate-90'></i> Website</button>
                 </div>
-            </div>            
+            </div>
         </section>
 
         <section class="skills-section">
@@ -137,19 +139,19 @@
             </h1>
 
             <div class="skills-box">
-                <img class="siklls-image" src="assets/images/digital brain (2).png" alt="siklls-image">
+                <img class="siklls-image" data-aos="zoom-in" data-aos-duration="3000" src="assets/images/digital brain (2).png" alt="siklls-image">
 
-                <div class="designer">
+                <div class="designer" data-aos="fade-right" data-aos-duration="1500">
                     <h1 class="gradient">Designer <i class='bx  bx-laptop'></i></h1>
                     <p>I have expertise in HTML, CSS, JavaScript, and design tools like Figma and Canva. My strength lies in blending aesthetics with functionality to create seamles user experiences.</p>
                 </div>
 
-                <div class="coder">
+                <div class="coder" data-aos="fade-left" data-aos-duration="2000">
                     <h1 class="gradient">Coder<i class='bx  bx-folder-code'></i></h1>
                     <p>I'm skilld in HTML, CSS, JavaScript, and framework like React and Node.js. I also have experience with database management using MongoDB and MySQL.</p>
                 </div>
 
-                <div class="slider" reverse="true" style="
+                <div class="slider" data-aos="zoom-in" data-aos-duration="2500" reverse="true" style="
                     --width: 100px;
                     --height: 100px;
                     --quantity: 9;
@@ -172,18 +174,24 @@
         <section class="contact-section">
             <h1 class="section-title">Let's talk</h1>
 
-            <div class="social-box">
-                <a href=""><i class='bxl  bx-whatsapp'></i> +62 851 6358 2207</a>
+            <div class="social-box autoBlur">
+                <div class="social-box-describe">
+                    <a href=""><i class='bxl  bx-whatsapp'></i> +62 851 6358 2207</a>
                 <a href=""><i class='bxl  bx-gmail'></i> mmaulanasaldi@gmail.com</a>
                 <a href=""><i class='bxl  bx-linkedin-square'></i> maulanasaldi</a>
-            </div>
-            <div class="social-icon">
-                <a href=""><i class='bxl  bx-youtube'></i> </a>
-                <a href=""><i class='bxl  bx-twitter-x'></i> </a>
-                <a href=""><i class='bxl  bx-facebook-circle'></i> </a>
+                </div>                
+
+                <div class="social-icon">
+                    <a href=""><i class='bxl  bx-youtube'></i> </a>
+                    <a href=""><i class='bxl  bx-twitter-x'></i> </a>
+                    <a href=""><i class='bxl  bx-facebook-circle'></i> </a>
+                </div>
+                <div>
+                    <p>&copy; 2025 Saldi Portfolio. All rights reserved.</p>
+                </div>
             </div>
 
-            <div class="contact-box">
+            <div class="contact-box autoBlur">
                 <p>Wheter you're looking to build a new website, improve your existing platform, or bring a unique project to file. i'm here to help.</p>
 
                 <p>Full Name</p>
@@ -198,12 +206,13 @@
                 <button><i class='bx  bx-send-alt'></i> Send Message</button>
             </div>
         </section>
-
-        <footer>
-            <h1>&copy; 2025 Saldi Portfolio. All rights reserved.</h1>
-        </footer>
     </div>
     
     <script src="js/app.js"></script>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
