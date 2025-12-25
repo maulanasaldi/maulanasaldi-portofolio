@@ -58,7 +58,7 @@
 
     .hero-info-title{
         margin-bottom: -15px;
-        font-size: 13.49px;        
+        font-size: 13.49px;
     }
 
     .hero-info h1{
@@ -77,7 +77,7 @@
         right: 0;
         display: flex;
         justify-content: center;
-        margin-top: -60%;
+        margin-top: -65%;
     }
     .hero-vid-box video{
         width: 80%;
@@ -159,8 +159,7 @@
         right: 0;
         max-width: 100%;
         max-width: 520px;
-        padding: 16px;
-        text-align: center;        
+        padding: 16px;             
     }    
 
     .coder{
@@ -169,12 +168,11 @@
         right: 0;
         max-width: 100%;
         max-width: 520px;
-        padding: 16px;
-        text-align: center;
+        padding: 16px;        
     }
 
-    .slider{
-        width
+    .slider .list .item img{
+        width: 30%;
     }
 
     
@@ -205,8 +203,26 @@
     }
 
     .social-icon{
+        display: flex;        
         justify-content: center;
+        margin-top: 20px;
+    }
+
+    .social-icon a{
+        height: 30px;
+        width: 30px;        
         align-items: center;
+        justify-content: center;
+        margin: 10px;        
+    }
+
+    .social-icon a i{        
+        margin-top: 0;
+    }
+
+    .contact-box{
+        margin-top: -1px;
+        font-size: 16px;
     }
 
 }
