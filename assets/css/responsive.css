@@ -1,0 +1,143 @@
+@media (max-width: 425px) {   
+    
+    *{
+        outline: 1px solid red;
+    }
+
+    /* Global safety */
+    html, body{
+        box-sizing: border-box;
+        width: 100%;
+        overflow-x: hidden;  /* mencegah horizontal scroll */
+    }
+
+    *, *::before, *::after { box-sizing: inherit; }
+
+    header{
+        position: fixed;
+        height: 50px;
+        width: 100%;
+    }
+
+    .hero{
+        width: 100%;
+    }
+
+    header ul{
+        display: none;
+    }
+    
+    header .box-icons {
+        display: none;
+    }
+
+    header h1{
+        font-size: 25px;
+    }
+
+    .blackhole-box video{
+        margin-top: -16%;
+    }
+
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .autoBlur{
+        animation: none;
+    }
+
+    .hero-info{
+        position: absolute;
+        margin-top: 80%;
+        margin-left: 20px;
+        width: 380px;
+    }
+
+    .hero-info-title{
+        margin-bottom: -15px;
+        font-size: 13.49px;        
+    }
+
+    .hero-info h1{
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: -5px;
+    }    
+
+    .hero-info p{
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+
+    .hero-vid-box{
+        position: relative;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: -60%;
+    }
+    .hero-vid-box video{
+        width: 80%;
+    }
+
+    .scroll-down{
+        display: none;
+        animation: none;
+    }
+
+    .info-cards{
+        display: flex;
+        flex-direction: column;        
+    }
+    .card:nth-child(1) {
+        height: 250px;
+    }
+    .card:nth-child(2) {
+        height: 260px;
+    }
+    .card:nth-child(3) {
+        height: 450px;
+    }
+    .card:nth-child(4) {
+        height: 300px;
+    }    
+    .card:nth-child(4) h1 {
+        margin-bottom: 10px;
+    }
+
+    .project-card{
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .section-title{
+        font-size: 24px;
+    }
+
+    .project-vidbox video {
+        max-width: 300px;        
+    }
+    .project-info{
+        max-width: 300px;        
+    }
+    .project-info:nth-child(3){
+        margin-top: 20px;
+    }
+    .project-info h1{
+        font-size: 18px;
+    }
+    .project-info p{
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
+    /* Skills */
+    .skills-box{    
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}

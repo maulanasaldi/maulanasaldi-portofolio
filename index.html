@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MMaulana Saldi | Portofolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-
+    <link rel="preload" href="assets/css/style.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
+    <link rel="stylesheet" href="assets/css/responsive.css" media="(max-width: 425px)">    
+    
     <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link href='https://cdn.boxicons.com/3.0.6/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
 
@@ -208,11 +210,31 @@
         </section>
     </div>
     
-    <script src="js/app.js"></script>
+    <script src="js/app.js" defer></script>
     
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- di akhir body, ganti script include menjadi seperti ini -->
+    <script src="js/app.js" defer></script>
+
+    <!-- load AOS juga defer agar tidak blocking -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+
     <script>
-        AOS.init();
+    // inisialisasi setelah halaman benar-benar load, dan kalau browser sempat idle
+    window.addEventListener('load', () => {
+        function initAOS() {
+        if (window.AOS) {
+            AOS.init({ once: true }); // once:true = animasi hanya sekali
+        }
+        }
+
+        // gunakan requestIdleCallback jika tersedia (tidak blok)
+        if ('requestIdleCallback' in window) {
+        requestIdleCallback(initAOS, {timeout:2000});
+        } else {
+        // fallback: jalankan setelah 300ms
+        setTimeout(initAOS, 300);
+        }
+    });
     </script>
 </body>
 </html>
