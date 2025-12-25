@@ -1,8 +1,5 @@
 @media (max-width: 425px) {   
-    
-    *{
-        outline: 1px solid red;
-    }
+
 
     /* Global safety */
     html, body{
@@ -44,6 +41,10 @@
         justify-content: center;
     }
 
+    .left{
+        height: 50px;        
+    }
+
     .autoBlur{
         animation: none;
     }
@@ -52,7 +53,7 @@
         position: absolute;
         margin-top: 80%;
         margin-left: 20px;
-        width: 380px;
+        width: 340px;
     }
 
     .hero-info-title{
@@ -87,6 +88,12 @@
         animation: none;
     }
 
+    /* Info Cards */
+    .card h1{
+        font-size: 24px;
+        line-height: 25px;
+    }
+
     .info-cards{
         display: flex;
         flex-direction: column;        
@@ -116,6 +123,10 @@
         font-size: 24px;
     }
 
+    .project-vidbox {
+        height: 308px;
+    }
+
     .project-vidbox video {
         max-width: 300px;        
     }
@@ -134,10 +145,68 @@
     }
 
     /* Skills */
-    .skills-box{    
+    .skills-box h1{
+        font-size: 24px;        
+    }
+
+    .skills-box p{
+        font-size: 12px;
+    }
+    
+    .designer{
+        margin-top: 30px;        
+        left: 0;
+        right: 0;
+        max-width: 100%;
+        max-width: 520px;
+        padding: 16px;
+        text-align: center;        
+    }    
+
+    .coder{
+        margin-top: 200px;
+        left: 0;
+        right: 0;
+        max-width: 100%;
+        max-width: 520px;
+        padding: 16px;
+        text-align: center;
+    }
+
+    .slider{
+        width
+    }
+
+    
+    .contact-section{
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        justify-content: center;
+    }
+    .contact-section h1{
+        top: -5%;
+    }
+
+    .social-box {        
+        width: 100%;
+        margin-top: 50px
+    }
+
+    .social-box-describe{        
+        gap: 10px;
+    }
+
+    .social-box-describe a{
+        font-size: 16px;
+    }
+
+    .copy-right{
+        display: none;
+    }
+
+    .social-icon{
+        justify-content: center;
+        align-items: center;
     }
 
 }
